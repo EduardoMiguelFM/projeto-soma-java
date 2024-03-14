@@ -10,6 +10,10 @@ public class Moeda {
         double dolar = this.valorReal / this.cotacaoDolar;
         return dolar;
     };
+    public String comprarDolar(String cpf, String nome){
+        this.calcularConversao();
+        return "O cliente com cpf: " + cpf +"\nNome: " + nome
+       + " comprou na data de hoje a quantia de $ " + this.quantidadeDolar;
 
 }
 
